@@ -1,0 +1,26 @@
+address,chain,role,status_2026-11-01_1440UTC,note
+TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki,TRON,seller loop (TRX disposal),"DRY — 131.004037 TRX, silent since 11-01 05:35",born 10-30 00:06; peak 26.2M TRX/h; accounting closed to fees only
+TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt,TRON,absorber = custom UsdtOFT (LayerZero),LIVE — still sending at 14:35:39 during probe,no ERC20 Transfer topics in bytecode; value moves only via calldata
+TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K,TRON,sweep wallet 1 (158.2M TRX),emptied 10-31 18:44:36 (tx e8441d62…),last vault to fall
+TL2F4GhnaFVZBZPncHYjwfYZFW44NcfVwj,TRON,sweep wallet 2 (120M TRX),emptied,
+TCBAz7itvtX5CjBzVMPQdrbwQLN63ao1fk,TRON,sweep wallet 3 (120M TRX),emptied,
+TJajtPqDqUGh1Sr1j8ugHoSXBVpaFLLHKT,TRON,sweep wallet 4 (120M TRX),emptied,
+TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31,TRON,feeder — unlimited USDT approval to absorber,0 USDT; still passing funds,$18.15M/121 post-hack sends
+TQecYjXdBJs2PMUV7gNXNFCykEbfJ1MT1c,TRON,pay1 — $2.34B pre-hack USDT hub (since 05-30),active,feeds TKy1L5rak
+TKy1L5rakZsqLyiKqsLYR6NrLMM7jt59az,TRON,"perfect loop: 152 in / 152 out = $1.064B, zero delta",active 11-01 01:04,pay1 <-> TKy1L5rak <-> TXFBqBbq
+TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ,TRON,bidirectional treasury core,ACTIVE 13:38 11-01,"IN $1.07B/951 OUT $1.23B/1049 in final 2,000 legs"
+TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs,TRON,treasury-scale platform pattern,ACTIVE 14:22 11-01,IN $11.71B/130 from 20 parties; OUT $10.44B/270 to 39 parties
+TMhJviFWiaxvqKLdng9dmsi1H5H5yTGEeu,TRON,TXFBqBbq satellite,IDLE since 10-31 00:54,IN from exactly 1 counterparty
+TETzqWSBDY12HrK4MsPq8A3AvZzhjoHgbx,TRON,top sink of TKHuVq1o,$7.50B out,exchange identification = wave-13 priority
+TBPxhVAsuzoFnKyXtc1o2UySEydPHgATto,TRON,top external feeder of TKHuVq1o,$4.00B in,identification priority
+TVXxphhFQMAMzPJsdA7CMX9reXtqvYzGNb,TRON,pay2 — absorber caller,$11.88M/63 post-hack,maps 1:1 to 0xf78b2eda
+TMKcUby8aLqumtBMvwV66JmLLhcE3878r8,TRON,washer — absorber conduit,$9.69M/56 post-hack,maps 1:1 to 0x12945c17
+TAfpoKQJfPiLa9AAkEk8CogM9GBTLBeoqH,TRON,absorber caller,$6.52M/41 post-hack,maps 1:1 to 0x07ae8551
+TYmHwFmjngMB,TRON,new micro-operator (W12),"30,050 USDT -> 0xd1282c4c at 14:35:39",fired during probe
+0x5de841a6a2b3bf76774db553293d3edb60a894d6,Ethereum,TB7-operator destination,DRAINED — 0.0002 USDT left,swapped via 0x6131B5fa 10-31 22:00-22:06
+0xf78b2eda7c1e20ff9906b31fe3612195bce9d6ce,Ethereum,pay2-operator destination,"HOLDS 307,646.92 USDT + 104.88 ETH",active 14:31 11-01
+0x12945c1747213c2cdd0126fac3e333db7a875453,Ethereum,washer-operator destination,DRAINED — 0.001 USDT,USDT/USDC transfers 12:18-13:07 11-01
+0x07ae8551be970cb1cca11dd7a11f47ae82e70e67,Ethereum,TAfpoKQJ-operator destination,"HOLDS 902,195.97 USDT",fillRelay x3 + submitOrder at 14:31
+0xb7953595c9a2ccc27bef49ae9df3d5c04bf43a04,Ethereum,largest single OFT send ($5.0M),DRAINED 10-30 15:42,
+0x7f559a69ec6c190be05315958bcc8a0aaaed4e7e,Ethereum,sibling UsdtOFT destination,FULLY ZEROED,$44.82M received in August
+0x759ba420bf1ded1765f18c2dc3fc57a1964a2ad1,Arbitrum,ARB-dominant destination,"RECEIVING — +2,000 fresh 14:02:51","1,182.41 USDT on ARB"

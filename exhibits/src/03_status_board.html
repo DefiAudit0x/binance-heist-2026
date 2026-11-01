@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --text:#111827; --sub:#6B7280; --muted:#9CA3AF; --surface:#F8FAFC; --border:#E5E7EB;
+          --green:#047857; --red:#B91C1C; --amber:#B45309; --blue:#1D4ED8; }
+  body { font-family: 'Segoe UI','Inter',Arial,sans-serif; background:#fff; color:var(--text); -webkit-font-smoothing:antialiased; }
+  #root { width: 1240px; margin: 0 auto; padding: 44px 46px; }
+  .t { font-size: 26px; font-weight: 800; text-align: center; letter-spacing: -0.4px; }
+  .st { font-size: 13.5px; color: var(--sub); text-align: center; margin: 8px 0 28px; }
+  .mono { font-family:'Consolas','DejaVu Sans Mono',monospace; font-size:11.5px; }
+  .board { display:grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .panel { background:var(--surface); border-radius:12px; padding:16px 18px; }
+  .ph { font-size:14px; font-weight:800; margin-bottom:10px; padding:8px 12px; border-radius:8px; background:#F0F4F8; color:#1E3050; border-left:4px solid #4A6B8A; }
+  table { width:100%; border-collapse:collapse; background:#fff; border-radius:8px; overflow:hidden; }
+  th { font-size:11px; text-transform:uppercase; letter-spacing:.6px; color:var(--muted); text-align:left; padding:8px 10px; border-bottom:1px solid var(--border); font-weight:700; }
+  td { font-size:12.5px; padding:8.5px 10px; border-bottom:1px solid #F1F5F9; vertical-align:top; }
+  tr:last-child td { border-bottom:none; }
+  .pill { display:inline-block; border-radius:999px; padding:2.5px 10px; font-size:11px; font-weight:700; white-space:nowrap; }
+  .p-green { background:#D1FAE5; color:#065F46; } .p-red { background:#FEE2E2; color:#991B1B; }
+  .p-amber { background:#FEF3C7; color:#92400E; } .p-blue { background:#DBEAFE; color:#1E40AF; }
+  .note { margin-top:10px; font-size:12px; color:var(--sub); line-height:1.55; }
+  .big { font-size:21px; font-weight:800; font-variant-numeric:tabular-nums; }
+  .foot { margin-top:20px; padding:11px 16px; background:#F9FAFB; border:1px solid var(--border); border-radius:8px; font-size:12px; color:var(--sub); text-align:center; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="t">Investigation Status Board — as of Wave 12</div>
+  <div class="st">2026-11-01 14:40 UTC &nbsp;·&nbsp; every status below is backed by a live probe in this wave, not by assumption</div>
+
+  <div class="board">
+    <div class="panel">
+      <div class="ph">Machine components — TRON side</div>
+      <table>
+        <tr><th>Component</th><th>Address</th><th>Status</th></tr>
+        <tr><td>Seller loop (TRX disposal)</td><td class="mono">TRBdWqHn…PRki</td><td><span class="pill p-green">DRY · 131.00 TRX</span></td></tr>
+        <tr><td>Sweep vaults ×4 (518.2M TRX)</td><td class="mono">TKkH2vH6… + 3</td><td><span class="pill p-green">ALL EMPTIED 10-31</span></td></tr>
+        <tr><td>Absorber (UsdtOFT)</td><td class="mono">TFG4wBa…vLPt</td><td><span class="pill p-red">LIVE — firing 14:35</span></td></tr>
+        <tr><td>Feeder TB7 (unlimited approval)</td><td class="mono">TB7pUXyw…4z31</td><td><span class="pill p-amber">0 USDT · still passing</span></td></tr>
+        <tr><td>Treasury hub TXFBqBbq</td><td class="mono">TXFBqBbq…JodJ</td><td><span class="pill p-red">ACTIVE 13:38</span></td></tr>
+        <tr><td>Giant TKHuVq1o ($11.7B in)</td><td class="mono">TKHuVq1o…QgFs</td><td><span class="pill p-red">ACTIVE 14:22</span></td></tr>
+        <tr><td>Satellite TMhJviFW</td><td class="mono">TMhJviFW…GEeu</td><td><span class="pill p-green">IDLE since 10-31 00:54</span></td></tr>
+        <tr><td>Freeze wall coverage (112 addrs)</td><td class="mono">cumulative sweep</td><td><span class="pill p-amber">112/112 CLEAN</span></td></tr>
+      </table>
+      <div class="note">Tether/Circle announced ~50% of the loot frozen — but none of it on any address this machine touches. The frozen half and the moving half are disjoint populations so far.</div>
+    </div>
+
+    <div class="panel">
+      <div class="ph">Destination fates — Ethereum / Arbitrum side</div>
+      <table>
+        <tr><th>Destination (operator map)</th><th>Received via OFT</th><th>Fate at 14:30 UTC</th></tr>
+        <tr><td class="mono">0x5de841a6…894d6 (TB7)</td><td>$18.10M</td><td><span class="pill p-green">Drained · swapped 10-31</span></td></tr>
+        <tr><td class="mono">0xf78b2eda…d6ce (pay2)</td><td>$11.85M</td><td><span class="pill p-amber">Holds 307,646.92 USDT + 104.9 ETH</span></td></tr>
+        <tr><td class="mono">0x12945c17…5453 (washer)</td><td>$9.69M</td><td><span class="pill p-green">Drained · 0.001 left</span></td></tr>
+        <tr><td class="mono">0x07ae8551…70e67 (TAF)</td><td>$6.52M</td><td><span class="pill p-amber">Holds 902,195.97 USDT</span></td></tr>
+        <tr><td class="mono">0xb7953595…43a04 ($5M single)</td><td>$5.00M</td><td><span class="pill p-green">Drained 10-30 15:42</span></td></tr>
+        <tr><td class="mono">0x7f559a69…4e7e (sibling)</td><td>$44.82M</td><td><span class="pill p-green">Fully zeroed</span></td></tr>
+        <tr><td class="mono">0x759ba420…2ad1 (ARB)</td><td>$5.01M</td><td><span class="pill p-red">Receiving — +2,000 fresh 14:02</span></td></tr>
+      </table>
+      <div class="note">Blacklist check via direct eth_call on native USDT: <span class="mono">isBlackListed = false</span> for all 7. ~1.21M USDT sleeping = the last realistic freeze surface on this rail.</div>
+    </div>
+  </div>
+
+  <div class="foot">Next priorities (wave 13): identify treasury giants TETzqWSBDY12 ($7.5B out) / TBPxhVAsuzoF ($4.0B in) · pin swap/relay contracts · extend lifetime walk to birth (Aug 12) · recurring freeze sweeps</div>
+</div>
+</body>
+</html>

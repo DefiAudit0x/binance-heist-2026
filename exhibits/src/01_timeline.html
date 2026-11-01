@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --text:#111827; --sub:#6B7280; --muted:#9CA3AF; --surface:#F8FAFC; --border:#E5E7EB; --connector:#94A3B8;
+          --amber:#D97706; --blue:#2563EB; --green:#047857; --red:#B91C1C; }
+  body { font-family: 'Segoe UI','Inter',Arial,sans-serif; background:#fff; color:var(--text); -webkit-font-smoothing:antialiased; }
+  #root { width: fit-content; min-width: 1160px; max-width: 1240px; margin: 0 auto; padding: 44px 46px; }
+  .t { font-size: 26px; font-weight: 800; text-align: center; letter-spacing: -0.4px; }
+  .st { font-size: 13.5px; color: var(--sub); text-align: center; margin: 8px 0 30px; }
+  .mono { font-family: 'Consolas','DejaVu Sans Mono',monospace; direction: ltr; font-size: 12px; background:#F1F5F9; border-radius:4px; padding:1px 6px; color:#334155; }
+  .phase { background: var(--surface); border-radius: 12px; padding: 18px 22px; }
+  .ph-title { font-size: 15.5px; font-weight: 800; padding: 9px 14px; border-radius: 8px; margin-bottom: 12px; display:flex; justify-content:space-between; align-items:center; }
+  .ph-title .when { font-size: 12px; font-weight: 600; opacity: .75; }
+  .steps { display:flex; flex-direction:column; gap:7px; }
+  .step { font-size: 13.5px; line-height: 1.6; padding: 8px 13px; background:#fff; border-radius:6px; border:1px solid var(--border); display:flex; gap:10px; }
+  .num { flex-shrink:0; width:21px; height:21px; line-height:21px; text-align:center; border-radius:50%; font-size:11.5px; font-weight:800; margin-top:1px; }
+  .b { font-weight: 700; }
+  .s1 { border-left: 3px solid var(--red); } .s2 { border-left: 3px solid var(--blue); }
+  .s3 { border-left: 3px solid var(--amber); } .s4 { border-left: 3px solid var(--green); } .s5 { border-left: 3px solid #4A6B8A; }
+  .g1 .ph-title { background:#FEF2F2; color:#7F1D1D; border-left:4px solid var(--red); } .g1 .num { background:#FEE2E2; color:#7F1D1D; }
+  .g2 .ph-title { background:#EFF6FF; color:#1E3A8A; border-left:4px solid var(--blue); } .g2 .num { background:#DBEAFE; color:#1E3A8A; }
+  .g3 .ph-title { background:#FFF7ED; color:#7C2D12; border-left:4px solid var(--amber); } .g3 .num { background:#FEF3C7; color:#7C2D12; }
+  .g4 .ph-title { background:#ECFDF5; color:#064E3B; border-left:4px solid var(--green); } .g4 .num { background:#D1FAE5; color:#064E3B; }
+  .g5 .ph-title { background:#F0F4F8; color:#1E3050; border-left:4px solid #4A6B8A; } .g5 .num { background:#DBEAFE; color:#1E3050; }
+  .arrow { text-align:center; color:var(--connector); font-size:22px; margin:8px 0; line-height:1; }
+  .foot { margin-top:20px; padding:11px 16px; background:#F9FAFB; border:1px solid var(--border); border-radius:8px; font-size:12px; color:var(--sub); text-align:center; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="t">The Binance Heist — Full Timeline, Breach to Wave 12</div>
+  <div class="st">All times UTC &nbsp;·&nbsp; updated 2026-11-01 14:40 (wave 12) &nbsp;·&nbsp; every number is on-chain derived, live-queried per wave</div>
+
+  <div class="phase g1">
+    <div class="ph-title"><span>Phase 1 — The breach</span><span class="when">2026-10-29 · 20:04 → 23:56 (3h 52m)</span></div>
+    <div class="steps">
+      <div class="step s1"><span class="num">1</span><span><span class="b">17 Binance hot wallets</span> drained across <span class="b">9 chains</span> — estimated loot <span class="b">$6.3B</span>, incl. <span class="mono">18,270.2 BTC</span>, <span class="mono">233.46M XRP</span>, <span class="mono">970,554 SOL</span>, billions of USDT.</span></div>
+      <div class="step s1"><span class="num">2</span><span>From the first movement, attacker wallets fired <span class="b">dust pings</span> (<span class="mono">0.000002</span>) between dozens of addresses to fragment tracking.</span></div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="phase g2">
+    <div class="ph-title"><span>Phase 2 — The freeze wall</span><span class="when">night of 10-29 · issuer response</span></div>
+    <div class="steps">
+      <div class="step s2"><span class="num">3</span><span>Binance suspends <span class="b">all withdrawals</span>; on-chain containment begins with issuers.</span></div>
+      <div class="step s2"><span class="num">4</span><span>Tether freezes <span class="b">~$1.6B USDT</span>, Circle <span class="b">$800M+ USDC</span> — roughly <span class="b">half the loot</span> immobilized.</span></div>
+      <div class="step s2"><span class="num">5</span><span>~<span class="b">$3.2B</span> remains outside issuer reach — liquidation concentrates where issuers can't touch: <span class="b">TRON</span>.</span></div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="phase g3">
+    <div class="ph-title"><span>Phase 3 — The TRON liquidation line</span><span class="when">2026-10-30 → 10-31</span></div>
+    <div class="steps">
+      <div class="step s3"><span class="num">6</span><span><span class="b">Main TRX treasury emptied in full</span> while monitored — captured live (wave 1).</span></div>
+      <div class="step s3"><span class="num">7</span><span>Distributor <span class="mono">41b8db53…</span> funds <span class="b">3 sweep wallets × 120,000,000 TRX</span> (10:18–10:19) — a <span class="b">518.2M TRX</span> vault layer.</span></div>
+      <div class="step s3"><span class="num">8</span><span>Seller loop <span class="mono">TRBdWqHn…PRki</span> pushes TRX in multi-million legs (26.2M/h peak) into lots and a SunSwap pair <span class="mono">TFG4wBa…</span> (<span class="b">51.9M USDT</span> side).</span></div>
+      <div class="step s3"><span class="num">9</span><span>Waves 7–8 live catch: last sweep vault falls <span class="mono">18:44:36 10-31</span> (tx <span class="mono">e8441d62…</span>) — all 518.2M inside the machine; seller pushes <span class="b">219.08M TRX in 8.4h</span>.</span></div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="phase g4">
+    <div class="ph-title"><span>Phase 4 — The machine is decoded</span><span class="when">2026-11-01 · waves 9–11</span></div>
+    <div class="steps">
+      <div class="step s4"><span class="num">10</span><span>The "pair" is no pair: <span class="mono">TFG4wBa</span> is a custom <span class="b">UsdtOFT</span> (LayerZero omnichain token) — <span class="b">zero Transfer events anywhere in its bytecode</span> (byte-level proof).</span></div>
+      <div class="step s4"><span class="num">11</span><span>Wave 11 decodes <span class="b">1,100 send() calls = $132.94M</span> already bridged out across Ethereum / Arbitrum / Solana / TON — with <span class="b">empty logs</span> on every send tx: an <span class="b">event-less machine</span>, visible only in calldata.</span></div>
+      <div class="step s4"><span class="num">12</span><span> Seller loop dies dry: <span class="mono">131.004037 TRX</span> left, zero activity since <span class="mono">05:35:18</span>. Sibling UsdtOFT had moved <span class="b">$100.84M</span> in August — <span class="b">two months before the hack</span>.</span></div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="phase g5">
+    <div class="ph-title"><span>Phase 5 — Wave 12: lifetime, destinations, live capture</span><span class="when">2026-11-01 · 13:45 → 14:40</span></div>
+    <div class="steps">
+      <div class="step s5"><span class="num">13</span><span>Absorber lifetime measured: <span class="b">6,564 sends = $836.08M</span> since Sep 3 (floor — born Aug 12); <span class="b">$83.46M</span> after the hack across 4 chains.</span></div>
+      <div class="step s5"><span class="num">14</span><span>Ethereum-side destinations resolved: 4 of 7 fully drained within 24–48h, two still hold <span class="b">1.21M USDT</span>, one keeps receiving fresh sends. <span class="b">0/7 blacklisted</span>.</span></div>
+      <div class="step s5"><span class="num">15</span><span><span class="b">Live capture:</span> 5 sends (<span class="mono">$65.6K</span>) after wave-11 close — the last one fired <span class="b">while the probe was running</span> (14:35:39). Machine still alive.</span></div>
+    </div>
+  </div>
+
+  <div class="foot">Evidence: data/binance/wave1–12 probe JSONs (live TronGrid / Blockscout / LayerZero metadata captures) · full honesty ledger in docs/06-methodology.md · this board regenerated each wave</div>
+</div>
+</body>
+</html>

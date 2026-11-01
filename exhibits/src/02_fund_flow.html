@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --text:#111827; --sub:#6B7280; --surface:#F8FAFC; --border:#E5E7EB; --connector:#94A3B8;
+          --amber:#D97706; --blue:#2563EB; --green:#047857; --red:#B91C1C; --violet:#6D28D9; }
+  body { font-family: 'Segoe UI','Inter',Arial,sans-serif; background:#fff; color:var(--text); -webkit-font-smoothing:antialiased; }
+  #root { width: 1280px; margin: 0 auto; padding: 44px 46px; }
+  .t { font-size: 26px; font-weight: 800; text-align: center; letter-spacing: -0.4px; }
+  .st { font-size: 13.5px; color: var(--sub); text-align: center; margin: 8px 0 28px; }
+  .mono { font-family:'Consolas','DejaVu Sans Mono',monospace; font-size:12px; background:#F1F5F9; border-radius:4px; padding:1px 6px; color:#334155; }
+  .row { display:flex; gap:22px; align-items:stretch; }
+  .col { flex:1; display:flex; flex-direction:column; }
+  .phase { background:var(--surface); border-radius:12px; padding:16px 20px; }
+  .ph-title { font-size:14.5px; font-weight:800; padding:8px 13px; border-radius:8px; margin-bottom:11px; display:flex; justify-content:space-between; }
+  .ph-title .tag { font-size:11.5px; font-weight:600; opacity:.75; }
+  .nodes { display:flex; flex-wrap:wrap; gap:8px; }
+  .node { background:#fff; border:1px solid var(--border); border-radius:8px; padding:9px 12px; font-size:12.5px; line-height:1.5; }
+  .node .a { font-weight:800; font-size:13px; }
+  .node .d { color:var(--sub); font-size:11.5px; }
+  .node.hot { border-left:3px solid var(--red); }
+  .node.wash { border-left:3px solid var(--amber); }
+  .node.out { border-left:3px solid var(--violet); }
+  .node.ok { border-left:3px solid var(--green); }
+  .arrow { text-align:center; color:var(--connector); font-size:21px; margin:7px 0; line-height:1; }
+  .g1 .ph-title { background:#FEF2F2; color:#7F1D1D; border-left:4px solid var(--red); }
+  .g2 .ph-title { background:#FFF7ED; color:#7C2D12; border-left:4px solid var(--amber); }
+  .g3 .ph-title { background:#F5F3FF; color:#4C1D95; border-left:4px solid var(--violet); }
+  .g4 .ph-title { background:#EFF6FF; color:#1E3A8A; border-left:4px solid var(--blue); }
+  .g5 .ph-title { background:#ECFDF5; color:#064E3B; border-left:4px solid var(--green); }
+  .foot { margin-top:20px; padding:11px 16px; background:#F9FAFB; border:1px solid var(--border); border-radius:8px; font-size:12px; color:var(--sub); text-align:center; }
+  .edge-label { text-align:center; font-size:11.5px; color:var(--sub); margin:2px 0 6px; }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="t">How the Money Moved — Loot to Liquidity, End to End</div>
+  <div class="st">Reconstructed from 12 waves of live on-chain probes (TronGrid / Blockscout / LayerZero) &nbsp;·&nbsp; amounts as measured 2026-11-01 14:40 UTC</div>
+
+  <div class="phase g1">
+    <div class="ph-title"><span>1 · The breach — 17 hot wallets, 9 chains, $6.3B</span><span class="tag">2026-10-29 20:04–23:56</span></div>
+    <div class="nodes">
+      <div class="node hot"><div class="a">17 Binance hot wallets</div><div class="d">BTC 18,270.2 (static since) · XRP 233.46M · SOL 970,554 · USDT billions · TRX treasury emptied</div></div>
+      <div class="node hot"><div class="a">Distributor 41b8db53…</div><div class="d">funds the TRON vault layer 10-30 10:18–10:19</div></div>
+      <div class="node hot"><div class="a">Dust-ping mesh</div><div class="d">0.000002-TRX pings fragment address clustering</div></div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="row">
+    <div class="col">
+      <div class="phase g2">
+        <div class="ph-title"><span>2 · TRON vault & seller loop</span><span class="tag">10-30 → 11-01</span></div>
+        <div class="nodes">
+          <div class="node wash"><div class="a">Sweep wallets ×4 — 518.2M TRX</div><div class="d">last vault fell 10-31 18:44:36 (tx e8441d62…)</div></div>
+          <div class="node wash"><div class="a">Seller loop TRBdWqHn…PRki</div><div class="d">peaked 26.2M TRX/h · 21.74M pushed on 11-01 · died dry: 131.004037 TRX</div></div>
+          <div class="node wash"><div class="a">Lot grid (20+ wallets)</div><div class="d">multi-million TRX pass-through lots, zero retained</div></div>
+        </div>
+      </div>
+      <div class="edge-label">all 518.2M TRX end up inside ↓</div>
+    </div>
+    <div class="col">
+      <div class="phase g2">
+        <div class="ph-title"><span>3 · Parallel treasury hub (pre-existing)</span><span class="tag">since 05-30</span></div>
+        <div class="nodes">
+          <div class="node ok"><div class="a">pay1 TQecYjXd… — $2.34B hub</div><div class="d">↔ TKy1L5rak perfect loop: 152 in / 152 out = $1.064B, zero delta</div></div>
+          <div class="node ok"><div class="a">TXFBqBbq — bidirectional core</div><div class="d">IN $1.07B / OUT $1.23B in final 2,000 legs, active 13:38 11-01</div></div>
+          <div class="node ok"><div class="a">TKHuVq1o — treasury-scale</div><div class="d">IN $11.71B (20 parties) / OUT $10.44B (39 parties) incl. TETzqWSBDY12 $7.50B</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="phase g3">
+    <div class="ph-title"><span>4 · The wash machine — absorber TFG4wBa = custom UsdtOFT (LayerZero)</span><span class="tag">born 08-12 · event-less</span></div>
+    <div class="nodes">
+      <div class="node wash"><div class="a">Callers → machine</div><div class="d">TB7pUXyw (unlimited approval) · pay2 TVXxphhF · washer TMKcUby8 · TAfpoKQJ · 12+ micro-operators · 2-SUN ping mesh</div></div>
+      <div class="node wash"><div class="a">Machine behaviour</div><div class="d">send() only in calldata · NO Transfer/Approval topics in bytecode · empty logs on successful sends — triple-verified invisible</div></div>
+      <div class="node wash"><div class="a">Lifetime throughput</div><div class="d">6,564 sends = $836.08M since 09-03 (floor) · $752.6M pre-hack · $83.46M post-hack · LIVE at 14:35:39 during probe</div></div>
+    </div>
+  </div>
+  <div class="arrow">↓ &nbsp; LayerZero OFT send() — dstEid pinned from official metadata</div>
+
+  <div class="phase g4">
+    <div class="ph-title"><span>5 · Cross-chain exit rails</span><span class="tag">lifetime / post-hack</span></div>
+    <div class="nodes">
+      <div class="node out"><div class="a">Ethereum (30101)</div><div class="d">$725.16M / 4,839 sends &nbsp;·&nbsp; $75.37M post-hack</div></div>
+      <div class="node out"><div class="a">Arbitrum (30110)</div><div class="d">$75.58M / 930 &nbsp;·&nbsp; $7.47M post-hack</div></div>
+      <div class="node out"><div class="a">TON (30343)</div><div class="d">$22.50M / 463 &nbsp;·&nbsp; $302K post-hack</div></div>
+      <div class="node out"><div class="a">Solana (30168)</div><div class="d">$12.84M / 332 &nbsp;·&nbsp; $316K post-hack</div></div>
+    </div>
+  </div>
+  <div class="arrow">↓</div>
+
+  <div class="phase g5">
+    <div class="ph-title"><span>6 · Destination fates on Ethereum/Arbitrum (W12, live)</span><span class="tag">14:30 UTC 11-01</span></div>
+    <div class="nodes">
+      <div class="node ok"><div class="a">Drained &lt;48h — 0x5de841a6 ($18.1M in)</div><div class="d">swapped out via 0x6131B5fa; 0x12945c17 ($9.7M) drained; 0xb7953595 ($5M) drained; 0x7f559a69 ($44.8M) zeroed</div></div>
+      <div class="node out"><div class="a">Still holding $1.21M USDT</div><div class="d">0xf78b2eda: 307,646.92 + 104.88 ETH (active 14:31) · 0x07ae8551: 902,195.97 (fillRelay ×3)</div></div>
+      <div class="node out"><div class="a">Still receiving — 0x759ba420 (ARB)</div><div class="d">fresh 2,000 USDT from absorber at 14:02:51</div></div>
+      <div class="node ok"><div class="a">Freeze status: 0/7 blacklisted</div><div class="d">direct isBlackListed eth_call on native USDT — issuer wall absent on this rail</div></div>
+    </div>
+  </div>
+
+  <div class="foot">Flow amounts are floors (bounded walks) unless marked final · BTC/XRP/SOL/ARB-legacy chains: zero movement since 10-29 (waves 3–5) · full ledger: docs/07-wave-log.md</div>
+</div>
+</body>
+</html>

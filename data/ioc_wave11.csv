@@ -1,0 +1,44 @@
+address,role,evidence,frozen_isBlackListed,public_tag,contract_name,first_logged
+TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki,"seller DRY-CATCH: 131.004037 TRX left; last activity 05:35:18 UTC; 35 out-legs 21,739,794.11 since 02:05 (w11)",w11_probe1; w11_probe1c,False,,,2026-11-01 13:45 UTC
+TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt,"absorber UsdtOFT: 1,100 send() decoded = $132,940,089.98 cross-chain in 4d (ETH $122.47M/913, ARB $9.07M/100, SOL $1.08M/48, TON $317K/39); ongoing at 13:36",w11_probe2/2c,False,,UsdtOFT,2026-11-01 13:45 UTC
+TNUNom8gxjzLvyquXTKsS74DN2k1t9nTPP,"sibling UsdtOFT: 143 sends $100,836,984.51 in Aug-2026 (ETH $50.51M + TON $49.63M + ARB $0.70M) PRE-attack",w11_probe2c,,,UsdtOFT,2026-11-01 13:45 UTC
+TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31,"absorber OFT caller -> dedicated ETH sink 0x5de841a6a2b3bf76774db553293d3edb60a894d6 ($18,101,644.60/120 sends)",w11_probe4/2c,,,,2026-11-01 13:45 UTC
+0x5de841a6a2b3bf76774db553293d3edb60a894d6,"LayerZero-OFTEthereum sink of TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31 ($18,101,644.60/120 sends)",w11_probe4/2c,,,,2026-11-01 13:45 UTC
+TVXxphhFQMAMzPJsdA7CMX9reXtqvYzGNb,"absorber OFT caller -> dedicated ETH sink 0xf78b2eda7c1e20ff9906b31fe3612195bce9d6ce ($11,851,266.79/61 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0xf78b2eda7c1e20ff9906b31fe3612195bce9d6ce,"LayerZero-OFTEthereum sink of TVXxphhFQMAMzPJsdA7CMX9reXtqvYzGNb ($11,851,266.79/61 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+TMKcUby8aLqumtBMvwV66JmLLhcE3878r8,"absorber OFT caller -> dedicated ETH sink 0x12945c1747213c2cdd0126fac3e333db7a875453 ($9,694,580.59/56 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x12945c1747213c2cdd0126fac3e333db7a875453,"LayerZero-OFTEthereum sink of TMKcUby8aLqumtBMvwV66JmLLhcE3878r8 ($9,694,580.59/56 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+TAfpoKQJfPiLa9AAkEk8CogM9GBTLBeoqH,"absorber OFT caller -> dedicated ETH sink 0x07ae8551be970cb1cca11dd7a11f47ae82e70e67 ($6,519,018.52/41 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x07ae8551be970cb1cca11dd7a11f47ae82e70e67,"LayerZero-OFTEthereum sink of TAfpoKQJfPiLa9AAkEk8CogM9GBTLBeoqH ($6,519,018.52/41 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+TGwuUmvgH5kWhvhL5qyWwYixziLxG1aFdd,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TLKy3jXkkZo7r2CUBDoTD6mbcYkCUkaEeU,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TYrb3SqkLfqXHurTagF83FDomXF2snBTpo,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TK84SxT4dwmST5vWnPEaBa9wiNEERw1f3G,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TYpB2JCuzfASJxSx5k9QAZM6eYrTPxSvMh,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TVGkYXoX7jgPRFxfgFUdcrnVENVND8qMEX,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TUJj3v3cfa2MxLPke3z4qTX7o3nqqV5ZDG,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+TTSZYtym27R7sWJxQfc9Swf6cwmRMR7EtL,"absorber UsdtOFT send() caller (top-8 by count, w11)",w11_probe2/2c,,,,2026-11-01 13:45 UTC
+0xb7953595c9a2ccc27bef49ae9df3d5c04bf43a04,"absorber OFT Ethereum recipient ($5,000,000.00/1 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x63898c6238cd417cf3a1db16d11a1b515077d743,"absorber OFT Ethereum recipient ($4,100,000.00/5 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x3c06727710fc94205bb3fa8a48a93073a42e4c71,"absorber OFT Ethereum recipient ($4,000,000.00/15 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0xb5b116b2e6dd7d2deb7c2ab807352b73c919b410,"absorber OFT Ethereum recipient ($4,000,000.00/13 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x7a91a043762e8dd8a71c6531c94fee7af15e9c3d,"absorber OFT Ethereum recipient ($3,999,500.00/16 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0xb6dd65210a95e5722d47e05ce26c0be38b69f9ed,"absorber OFT Ethereum recipient ($3,000,000.00/11 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x759ba420bf1ded1765f18c2dc3fc57a1964a2ad1,"absorber OFT ARBITRUM sink ($5,007,474.28/20 sends)",w11_probe2c,,,,2026-11-01 13:45 UTC
+TA1TAos9qzwgJNjJDEpTayZwbzELR9TcRX,sibling UsdtOFT dominant caller: $94.33M in Aug (TON $49.51M + ETH $44.82M),w11_probe2c,,,,2026-11-01 13:45 UTC
+TON:7nKTsULC3ptA5NXLYAsWf7GDa7g2MHcZc9QPjJGNWMgY,"sibling OFT TON sink ($49,508,769.53/18 sends, Aug-2026)",w11_probe2c,,,,2026-11-01 13:45 UTC
+0x7f559a69ec6c190be05315958bcc8a0aaaed4e7e,"sibling OFT Ethereum sink ($44,820,371.72/15 sends, Aug-2026)",w11_probe2c,,,,2026-11-01 13:45 UTC
+TKy1L5rakZsqLyiKqsLYR6NrLMM7jt59az,"perfect loop: 152 in-legs $1,063,820,421 ALL from pay1(TQecYjXd) -> 152 out $1,063,820,421 ALL to TXFBqBbq (since 05-30, active 11-01 01:04)",w11_probe3,,,,2026-11-01 13:45 UTC
+TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ,"USDT liquidity hub born 07-10, first USDT 07-18: last 2000 legs IN $1.070B/951 OUT $1.227B/1049, active 11-01 13:38",w11_probe3,,,,2026-11-01 13:45 UTC
+TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs,TXFBqBbq bidirectional giant: $130M in / $814.0M out (exchange-like pattern),w11_probe3,,,,2026-11-01 13:45 UTC
+TMhJviFWiaxvqKLdng9dmsi1H5H5yTGEeu,TXFBqBbq bidirectional giant #2: $420.1M in / $342.9M out,w11_probe3,,,,2026-11-01 13:45 UTC
+THPvaUhoh2Qn2y9THCZML3H815hhFhn5YC,"TXFBqBbq earliest USDT source ($405.5M, 07-18..19)",w11_probe3,,,,2026-11-01 13:45 UTC
+TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31,granted UNLIMITED USDT approval (MaxUint256) to absorber; USDT balance now 0; IN $53.65M/540 since 06-16 (Vault $36.93M + absorber $16.19M),w11_probe4/2c,,,,2026-11-01 13:45 UTC
+TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F,"seller final-walk lot (w11): 2,223,979.35 TRX received in closing window",w11_probe1,,,,2026-11-01 13:45 UTC
+THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk,"seller final-walk lot (w11): 2,088,476.15 TRX received in closing window",w11_probe1,,,,2026-11-01 13:45 UTC
+TEiTsR59nRxgL5iPiNv1Mu7G3HUYP76Jw9,"seller final-walk lot (w11): 1,013,217.30 TRX received in closing window",w11_probe1,,,,2026-11-01 13:45 UTC
+TWJkbPhShcy6sp8AahRdj7h1NKFS2yqhLK,"seller final-walk lot (w11): 961,379.18 TRX received in closing window",w11_probe1,,,,2026-11-01 13:45 UTC
+TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ,"AuthGemJoin5 local redeploy: 3,468B code-hash e9eb58a758333e23, origin TXHDjs83",w11_probe4,,,AuthGemJoin5,2026-11-01 13:45 UTC
+TBerK8mxwFEqvqkAKc41TpnRNYuLdGXV5j,"UniversalUniswapV3Adapter: 3,937B code-hash 57eac5ec9b6859ba, origin TEF1k5L3",w11_probe4,,,UniversalUniswapV3Adapter,2026-11-01 13:45 UTC
+TXHDjs83UhE2MeSfy3TGMobdzR1KEFPySR,deployer of AuthGemJoin5 (pool-B top funder),w11_probe4,,,,2026-11-01 13:45 UTC
+TEF1k5L3Wi5r2kpcGqukC9bwnYq4gSAgKm,deployer of UniversalUniswapV3Adapter,w11_probe4,,,,2026-11-01 13:45 UTC

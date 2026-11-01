@@ -1,0 +1,37 @@
+address,role,evidence,frozen_isBlackListed,public_tag,contract_name,first_logged
+0x5de841a6a2b3bf76774db553293d3edb60a894d6,TB7-operator ETH dest: received $18.10M/120 via OFT; DRAINED to 0.0002 USDT; swaps via 0x6131B5fa 10-31 22:00-22:06,w12_probe1/1b,False,,,2026-11-01 14:40 UTC
+0xf78b2eda7c1e20ff9906b31fe3612195bce9d6ce,"pay2-operator ETH dest: received $11.85M/61; STILL HOLDS 307,646.92 USDT + 104.88 ETH; active 11-01 14:31",w12_probe1/1b,False,,,2026-11-01 14:40 UTC
+0x12945c1747213c2cdd0126fac3e333db7a875453,washer-operator ETH dest: received $9.69M/56; drained to 0.001 USDT; USDT/USDC transfers 11-01 12:18-13:07,w12_probe1/1b,False,,,2026-11-01 14:40 UTC
+0x07ae8551be970cb1cca11dd7a11f47ae82e70e67,"TAfpoKQJ-operator ETH dest: received $6.52M/41; STILL HOLDS 902,195.97 USDT; fillRelay x3 + submitOrder 11-01 14:31",w12_probe1/1b,False,,,2026-11-01 14:40 UTC
+0xb7953595c9a2ccc27bef49ae9df3d5c04bf43a04,"largest single OFT send $5.0M; drained, last transfer 10-30 15:42",w12_probe1,False,,,2026-11-01 14:40 UTC
+0x7f559a69ec6c190be05315958bcc8a0aaaed4e7e,sibling-UsdtOFT ETH dest: received $44.82M/15; fully drained 0 USDT / 0 ETH,w12_probe1,False,,,2026-11-01 14:40 UTC
+0x759ba420bf1ded1765f18c2dc3fc57a1964a2ad1,"ARB-dominant dest: received $5.01M/20; 1,182.41 USDT left on ARB; received fresh 2,000 USDT from absorber 11-01 14:02:51",w12_probe1,revert on ARB blacklist call,,,2026-11-01 14:40 UTC
+TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt,"absorber UsdtOFT LIFETIME: deep desc walk 45pp = 6,564 sends $836,080,111.54 since 09-03 (ETH $725.16M + ARB $75.58M + TON $22.50M + SOL $12.84M); POST-HACK $83,457,251.12/803 (final); LIVE at probe: 5 sends after 13:36:36 incl 14:35:39 during probe",w12_deepdesc,False,,UsdtOFT,2026-11-01 14:40 UTC
+TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki,seller CONFIRMED DRY: 131.004037 TRX exact W11 match; zero native activity since 05:35:18,w12_probe3,False,,,2026-11-01 14:40 UTC
+TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31,"TB7 zero-balance pass-through: last-400 legs in $23.92M/192 out $24.38M/208; fed absorber 118,971.30 USDT on 10-31 22:42; 291.51 TRX",w12_probe3,False,,,2026-11-01 14:40 UTC
+TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs,"treasury-scale platform-pattern hub: IN $11,707,294,359.20/130 (20 uniq; TXFBqBbq $7.22B + TBPxhVAsuzoF $4.00B) OUT $10,444,918,177.96/270 (39 uniq; TETzqWSBDY12 $7.50B); active 11-01 14:22",w12_probe4,False,,,2026-11-01 14:40 UTC
+TMhJviFWiaxvqKLdng9dmsi1H5H5yTGEeu,TXFBqBbq satellite: IN $1.61B/379 ALL from TXFBqBbq (1 counterparty) OUT $1.79B/21 (TXFBqBbq $1.69B + TKHuVq1o $99.6M); idle since 10-31 00:54,w12_probe4,False,,,2026-11-01 14:40 UTC
+TETzqWSBDY12HrK4MsPq8A3AvZzhjoHgbx,top sink of TKHuVq1o $7.50B - EXCHANGE IDENTIFICATION PRIORITY w13,w12_probe4,,,,2026-11-01 14:40 UTC
+TBPxhVAsuzoFnKyXtc1o2UySEydPHgATto,top external feeder of TKHuVq1o $4.00B - IDENTIFICATION PRIORITY w13,w12_probe4,,,,2026-11-01 14:40 UTC
+TYmHwFmjngMB,"new micro-operator: 30,050 USDT -> 0xd1282c4c on 11-01 14:35:39 (DURING probe)",w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TFNPHPpHQX,"new micro-operator: 4,512.93 USDT -> TON 201ad09b on 11-01 14:31:42",w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TXAQd3BhC3,"new micro-operator: 19,013 USDT -> 0x7a792d97 on 11-01 14:30:21",w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TSMtAweHkM,"operator: 2,000 USDT -> 0x759ba420 (ARB dest) on 11-01 14:02:51",w12_deepdesc,False,,,2026-11-01 14:40 UTC
+THLTgNbHXx,"operator: 10,000 USDT -> TON c9ff1e01 on 11-01 13:36:36",w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TW85RX4sK3u7EWCeezZgfW8YDapWumJGVt,post-hack absorber caller $3.45M/3,w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TUJj3v3cfa2MxLPke3z4qTX7o3nqqV5ZDG,post-hack absorber caller $2.80M/3,w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TAubyUUHXSZosce9nGSu5H8HCWLV33dXGW,post-hack absorber caller $1.55M/4,w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TPzzBQa53dx7yB3yRhp8hAxY67sJWmhpsX,post-hack absorber caller $1.19M/10,w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TD49jRMHBuNLzs8wPocGAT1x6qpM9vXhwT,post-hack absorber caller $1.00M/10,w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TAKHw89wcXMHhC3MW1Fa4igXNyyj43cWXt,post-hack absorber caller $1.00M/3,w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TGx23Rd8saJwoKrcBrAEx31Qtc69wWoW42,"post-hack absorber caller $799,414/1",w12_deepdesc,False,,,2026-11-01 14:40 UTC
+TXq112bqb28k,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+TFQECMMbvU9u,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+TUauoDEVPW1v,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+TYjg8XBvUq3a,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+TDRJLbCfEuPG,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+TJGkUo4KLetY,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+TYryEdbUVgn7,absorber caller (freeze-clean),w12_probe6,False,,,2026-11-01 14:40 UTC
+0x6131B5fae19E,swap router used by drained 0x5de841a6 10-31 22:00-22:06 (name to pin: Universal Router?) - truncated prefix as logged,w12_probe1b,,,,2026-11-01 14:40 UTC
+0x5c7BCd6E7De5,fillRelay target of 0x07ae8551 x3 11-01 14:31 (name to pin: Relay protocol?) - truncated prefix as logged,w12_probe1b,,,,2026-11-01 14:40 UTC
+0x49AAA987b1a7,submitOrder target of 0x07ae8551 (name to pin) - truncated prefix as logged,w12_probe1b,,,,2026-11-01 14:40 UTC

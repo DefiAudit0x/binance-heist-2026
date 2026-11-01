@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --ink: #F1F5F9; --sub: #94A3B8; --dim: #64748B;
+    --bg: #0F172A; --card: #1E293B; --line: #334155;
+    --accent: #38BDF8; --red: #F87171; --amber: #FBBF24; --green: #34D399;
+  }
+  body { font-family: 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif; background: var(--bg); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  #root { width: 1600px; padding: 56px 64px 48px; background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(56,189,248,0.14), transparent 60%),
+      radial-gradient(900px 420px at 8% 110%, rgba(248,113,113,0.10), transparent 60%), var(--bg); }
+  .kicker { display: inline-block; font-size: 15px; letter-spacing: 3px; color: var(--accent); font-weight: 700; text-transform: uppercase; margin-bottom: 14px; }
+  h1 { font-size: 54px; font-weight: 800; line-height: 1.08; letter-spacing: -1px; }
+  h1 .thin { color: var(--sub); font-weight: 600; }
+  .lede { margin-top: 16px; font-size: 19px; color: var(--sub); max-width: 1050px; line-height: 1.55; }
+  .stats { display: flex; gap: 18px; margin-top: 38px; }
+  .stat { flex: 1; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; }
+  .stat .n { font-size: 34px; font-weight: 800; letter-spacing: -0.5px; font-variant-numeric: tabular-nums; }
+  .stat .l { margin-top: 6px; font-size: 13.5px; color: var(--sub); line-height: 1.4; }
+  .n.red { color: var(--red); } .n.amber { color: var(--amber); } .n.blue { color: var(--accent); } .n.green { color: var(--green); }
+  .footer { margin-top: 30px; display: flex; justify-content: space-between; align-items: center; font-size: 13.5px; color: var(--dim); }
+  .pill { border: 1px solid var(--line); border-radius: 999px; padding: 5px 14px; color: var(--sub); }
+</style>
+</head>
+<body>
+<div id="root">
+  <div class="kicker">Open-source on-chain forensics &nbsp;·&nbsp; Waves 1–12</div>
+  <h1>The Binance Hot-Wallet Drain <span class="thin">— Oct 29, 2026</span></h1>
+  <div class="lede">$6.3&nbsp;Billion lifted from 17 Binance hot wallets across 9 chains in 3h 52m. Roughly half was frozen by issuers within hours — the rest was walked through a TRON wash machine and out of the ecosystem through a LayerZero OFT rail, which was still firing while we measured it.</div>
+  <div class="stats">
+    <div class="stat"><div class="n red">$6.3B</div><div class="l">stolen from 17 hot wallets<br>across 9 blockchains, 20:04–23:56 UTC</div></div>
+    <div class="stat"><div class="n amber">≈ 50%</div><div class="l">frozen by Tether (~$1.6B USDT)<br>+ Circle ($800M+ USDC)</div></div>
+    <div class="stat"><div class="n blue">$836.08M</div><div class="l">lifetime of the wash machine's OFT exit<br>6,564 sends decoded in calldata (W12)</div></div>
+    <div class="stat"><div class="n green">112 / 112</div><div class="l">tracked TRON addresses freeze-clean —<br>issuer wall has not touched this machine</div></div>
+  </div>
+  <div class="footer">
+    <span>Case file: cross-chain-forensics · binance side-case · waves 1–12 · data through 2026-11-01 14:40 UTC</span>
+    <span class="pill">Public blockchain data only</span>
+  </div>
+</div>
+</body>
+</html>
