@@ -1,0 +1,500 @@
+{
+ "checked": 82,
+ "blacklisted": 0,
+ "flagged": [],
+ "usdt_holders": {},
+ "rows": [
+  {
+   "addr": "TA1TAos9qzwgJNjJDEpTayZwbzELR9TcRX",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:sibling UsdtOFT dominant caller: $94.3"
+  },
+  {
+   "addr": "TA4RtA5TRM52jr64HopuZ5DednLeEczhKK",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TAKHw89wcXMHhC3MW1Fa4igXNyyj43cWXt",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:post-hack absorber caller $1.00M/3"
+  },
+  {
+   "addr": "TAfpoKQJfPiLa9AAkEk8CogM9GBTLBeoqH",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber OFT caller -> dedicated ETH s"
+  },
+  {
+   "addr": "TAubyUUHXSZosce9nGSu5H8HCWLV33dXGW",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:post-hack absorber caller $1.55M/4"
+  },
+  {
+   "addr": "TAxBJv1Feu4XzxcptZoXPRJczDaMQDqHHW",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($1,500, W10-5)"
+  },
+  {
+   "addr": "TB7pUXywPHA4UUhyVbX4U9hsBCFQm14z31",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:Vault big out $12.28M"
+  },
+  {
+   "addr": "TBF2HDjc2bRhPt7MN88ypcDbRbSMxfS8vk",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($550,000, W10-5)"
+  },
+  {
+   "addr": "TBKKMD1fw4gJwmyfXE1seURueGddKT25b7",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TBPxhVAsuzoFnKyXtc1o2UySEydPHgATto",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:top external feeder of TKHuVq1o $4.00B"
+  },
+  {
+   "addr": "TBZdyd7dhAQZ1eYJFizh3EpnqEbmmnpVpd",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay2 feeder $6.67M"
+  },
+  {
+   "addr": "TBerK8mxwFEqvqkAKc41TpnRNYuLdGXV5j",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:treasury feeder $4.5M (UniversalUniswa"
+  },
+  {
+   "addr": "TCS3FxbVcBV7MzekWV5rMDiS2Y3oHJd5xj",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($4,026, W10-5)"
+  },
+  {
+   "addr": "TCtTRH2vRDpDoQfWRqoF7RXaCtZ75cWYzL",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($25,000, W10-5)"
+  },
+  {
+   "addr": "TD49jRMHBuNLzs8wPocGAT1x6qpM9vXhwT",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:post-hack absorber caller $1.00M/10"
+  },
+  {
+   "addr": "TEF1k5L3Wi5r2kpcGqukC9bwnYq4gSAgKm",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:deployer of UniversalUniswapV3Adapter"
+  },
+  {
+   "addr": "TETzqWSBDY12HrK4MsPq8A3AvZzhjoHgbx",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:top sink of TKHuVq1o $7.50B - EXCHANGE"
+  },
+  {
+   "addr": "TEZWKD7eujZVDJAm74ArJUCJ7s95xj2vn7",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($7,550, W10-5)"
+  },
+  {
+   "addr": "TEcDijvKSXcfWT7S6rd44H5vNgufm7Y4XC",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:washer-source = Vault contract: agg 25"
+  },
+  {
+   "addr": "TEiTsR59nRxgL5iPiNv1Mu7G3HUYP76Jw9",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:seller final-walk lot (w11): 1,013,217"
+  },
+  {
+   "addr": "TF1UVCf1RWU2Ef4aftcvgqZ4P82nrSepte",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($1,000, W10-5)"
+  },
+  {
+   "addr": "TF52b4xrvz9DtnvFcPRouUaA2QnkLACJse",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($100,000, W10-5)"
+  },
+  {
+   "addr": "TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:absorber = UsdtOFT contract (W10-4)"
+  },
+  {
+   "addr": "TFNPHPpHQXKuvSLfNwcvkcwGvgMJG8JSVc",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "microop_w13"
+  },
+  {
+   "addr": "TGJiT727xB8hjzQmBBufQGXyKxejpSbNjB",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:UsdtOFT contract deployer (absorber)"
+  },
+  {
+   "addr": "TGUZpxeGtx6sWBbeXxakaEui7iFb7RaM9z",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($1,771, W10-5)"
+  },
+  {
+   "addr": "TGwuUmvgH5kWhvhL5qyWwYixziLxG1aFdd",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TGx23Rd8saJwoKrcBrAEx31Qtc69wWoW42",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:post-hack absorber caller $799,414/1"
+  },
+  {
+   "addr": "THLTgNbHXxGnBT3b65WNoBbZbq5mpzxaAb",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "microop_w13"
+  },
+  {
+   "addr": "THMg4J1sytc6fgFZwqTgiiWJYwyWc3YpYk",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:seller final-walk lot (w11): 2,088,476"
+  },
+  {
+   "addr": "THPvaUhoh2Qn2y9THCZML3H815hhFhn5YC",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:TXFBqBbq earliest USDT source ($405.5M"
+  },
+  {
+   "addr": "THS55WwRma8UoSXZDspNryqx2GRv47n2qv",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:treasury feeder $4.48M"
+  },
+  {
+   "addr": "THfLzpsrVVsJtHkAxtGWCsBGEebgaFioHp",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($47,221, W10-5)"
+  },
+  {
+   "addr": "TK84SxT4dwmST5vWnPEaBa9wiNEERw1f3G",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TKHuVq1oKVruCGLvqVexFs6dawKv6fQgFs",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:TXFBqBbq bidirectional giant: $130M in"
+  },
+  {
+   "addr": "TKkH2vH6kyi2QKcMbqym53WMuvdd1xvw6K",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:sweep-1 vault (emptied W8)"
+  },
+  {
+   "addr": "TKnt4TDToAjSFtoetJkpJXCynHyUzKVLY4",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($569,044, W10-5)"
+  },
+  {
+   "addr": "TKy1L5rakZsqLyiKqsLYR6NrLMM7jt59az",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay1 counterparty: $1.064B USDT out of"
+  },
+  {
+   "addr": "TLKy3jXkkZo7r2CUBDoTD6mbcYkCUkaEeU",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TMDENHFSiRzmJNSEBAFmrDbLkQ672iPN8H",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:sale pool A (WTRX side)"
+  },
+  {
+   "addr": "TMKcUby8aLqumtBMvwV66JmLLhcE3878r8",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:washer: bidirectional conduit w/ absor"
+  },
+  {
+   "addr": "TMhJviFWiaxvqKLdng9dmsi1H5H5yTGEeu",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:TXFBqBbq bidirectional giant #2: $420."
+  },
+  {
+   "addr": "TMuteBJ2hDX6Cb4rxsCLcEWZGdkKe4mruK",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:washer top external out $5.78M"
+  },
+  {
+   "addr": "TN2xcp1PRbSeJjWSoQJkTDjhJjcf4BBgnG",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($370,000, W10-5)"
+  },
+  {
+   "addr": "TNCJTZzTyF1qJ6upTRbEhPkwNQc7Q88888",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay2 native-TRX hub out $270K (vanity "
+  },
+  {
+   "addr": "TNUNom8gxjzLvyquXTKsS74DN2k1t9nTPP",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay1 third leg = UsdtOFT contract ($16"
+  },
+  {
+   "addr": "TNhpfKq83wufEKGjBhQFnT7jnxYmyBzH6F",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:seller final-walk lot (w11): 2,223,979"
+  },
+  {
+   "addr": "TPtwG1em9otP1L1eJw1we9MsrKrR9LBStU",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($531,801, W10-5)"
+  },
+  {
+   "addr": "TPzzBQa53dx7yB3yRhp8hAxY67sJWmhpsX",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:post-hack absorber caller $1.19M/10"
+  },
+  {
+   "addr": "TQS6QjqBjLU9eGiFEXB2xGKTb3T7qtDSCu",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TQecYjXdBJs2PMUV7gNXNFCykEbfJ1MT1c",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay1: $2.34B USDT hub, USDT-rail since"
+  },
+  {
+   "addr": "TQfTj5nfKxegdV1LYZT1sHewoTNQDZjK4T",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($5,000, W10-5)"
+  },
+  {
+   "addr": "TQqgNg13s2DjvXhW1ky4v6TsR8wZGvb7Y4",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:sale pool B (USDT conduit)"
+  },
+  {
+   "addr": "TRBdWqHnDVSZCVGfgHdKFLQPirQcA2PRki",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:seller (TRX sale machine core)"
+  },
+  {
+   "addr": "TRkAp7BVoksDWGZUKHW5SQr7mKoQ9beH1n",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TSMtAweHkMMLHCdEytqDhApRsmTbp6bK6R",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "microop_w13"
+  },
+  {
+   "addr": "TSRe7AfRjciGZaABj5t5ETH74S7uT6GEEg",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TSUUVjysXV8YqHytSNjfkNXnnB49QDvZpx",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($248,774, W10-5); "
+  },
+  {
+   "addr": "TSUYvQ5tdd3DijCD1uGunGLpftHuSZ12sQ",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($3,125,313, W10-5)"
+  },
+  {
+   "addr": "TTSZYtym27R7sWJxQfc9Swf6cwmRMR7EtL",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TTvwUJ2k56NVjauF2NteBeN5ytRAxvFb2s",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TUJj3v3cfa2MxLPke3z4qTX7o3nqqV5ZDG",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TUoVsNvkSbCQFty1tLViCgvMjNRGGEK6eM",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TVFxAQUx3xrrGrwEwCVFMNkPd2z5zTwAoc",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:treasury feeder $3.52M"
+  },
+  {
+   "addr": "TVGkYXoX7jgPRFxfgFUdcrnVENVND8qMEX",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TVXxphhFQMAMzPJsdA7CMX9reXtqvYzGNb",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay2: USDT rail born 10-29 11:01 (pre-"
+  },
+  {
+   "addr": "TVjuTE3V5bMVdpfNhid8kD2v35T2k1u1Br",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($546,764, W10-5)"
+  },
+  {
+   "addr": "TW85RX4sK3u7EWCeezZgfW8YDapWumJGVt",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w12:post-hack absorber caller $3.45M/3"
+  },
+  {
+   "addr": "TW9aVZUnmjxMT97w8jsQdXWessZTY2RT2u",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TWJkbPhShcy6sp8AahRdj7h1NKFS2yqhLK",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:seller final-walk lot (w11): 961,379.1"
+  },
+  {
+   "addr": "TWVbWM7mpVXsuse42U7LVvAHFbtN8PLmWk",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($508,159, W10-5)"
+  },
+  {
+   "addr": "TWeiNF7D8LnpXsVsF9JmSzmKoCnr11mesN",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($11,800, W10-5)"
+  },
+  {
+   "addr": "TWqF5bpc1aZ7MMxDqGficXCefwxmTeVp7x",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($692, W10-5)"
+  },
+  {
+   "addr": "TWvmy1h2bkDJu7knrtkjVVHhcUwn3qyEiq",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TXAQd3BhC3RVVEyiNCd1nmf9dGDvL3M3Kq",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "microop_w13"
+  },
+  {
+   "addr": "TXFBqBbqJommqZf7BV8NNYzePh97UmJodJ",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pay1 counterparty: $1.246B USDT into p"
+  },
+  {
+   "addr": "TXHDjs83UhE2MeSfy3TGMobdzR1KEFPySR",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:deployer of AuthGemJoin5 (pool-B top f"
+  },
+  {
+   "addr": "TXSTwiG2zCcKWsHbpBAnXd8YfDfy4ytirg",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:pool-B USDT funder ($340,000, W10-5)"
+  },
+  {
+   "addr": "TXSt1DTjju4UQxeNo5s6yxz1cjx7698Rmd",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w10:lot follow-through (W10-6); tier-3 lot"
+  },
+  {
+   "addr": "TYmHwFmjngMBiKrMK1VHwQw2KPra3e1WCb",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "microop_w13"
+  },
+  {
+   "addr": "TYpB2JCuzfASJxSx5k9QAZM6eYrTPxSvMh",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  },
+  {
+   "addr": "TYrb3SqkLfqXHurTagF83FDomXF2snBTpo",
+   "isBlackListed": false,
+   "usdt_balance": 0.0,
+   "role": "ioc_w11:absorber UsdtOFT send() caller (top-8 "
+  }
+ ]
+}

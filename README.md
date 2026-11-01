@@ -32,14 +32,18 @@ This repository is a complete, reproducible, start-to-finish reconstruction of w
 | 4 | TRX vault layer funded then fully consumed | **518.2M TRX** |
 | 5 | Seller loop `TRBdWqHn…` lifetime before dying dry | **≈ $1B-equiv TRX pushed; died at 131.004037 TRX** |
 | 6 | Absorber `TFG4wBa…` = custom **UsdtOFT** with **zero ERC20 events** (bytecode-level proof) | — |
-| 7 | Lifetime cross-chain exit through the machine (6,564 `send()` calls decoded) | **≥ $836.08M** |
-| 8 | Of which **after** the hack (final, fully-covered window) | **$83,457,251.12** |
-| 9 | Exit rails: Ethereum / Arbitrum / TON / Solana (LayerZero eids 30101/30110/30343/30168) | $725.2M / $75.6M / $22.5M / $12.8M |
-| 10 | EVM destination fates: 4 of 7 drained < 48h; 2 still hold **1.21M USDT**; 1 still receiving | 0/7 blacklisted |
-| 11 | Tether freeze coverage across **every address this machine touches** | **112 / 112 clean** |
+| 7 | Lifetime cross-chain exit through the machine (**8,809** `send()` calls decoded — wave-13 continuous walk reached the birth window) | **$1,060,756,345.72** |
+| 8 | Of which **after** the hack (extended window through 11-01 18:56 UTC) | **$85,096,119.95** |
+| 9 | Exit rails: Ethereum / Arbitrum / TON / Solana (LayerZero eids 30101/30110/30343/30168) | $921.8M / $87.8M / $30.4M / $20.7M |
+| 10 | EVM destination fates: 4 of 7 drained < 48h; 2 still hold **1,145,207.78 USDT** — draining −$65,817.52 in 28h via pinned bridge infra | 0/7 blacklisted |
+| 11 | Tether freeze coverage across **every address this machine touches** | **112 / 112 clean** + wave-13 sweep 82/82, zero USDT left on TRON |
 | 12 | Dormant chains since the breach (BTC 18,270.2 · XRP 233.46M · SOL 970,554) | **zero movement** |
 
 **The headline insight:** the frozen half and the moving half of this theft are **two disjoint populations**. The issuer freeze wall has not touched a single address on the machine's visible layer — and the machine was a **$750M-scale cross-chain rail for months before the hack**, then repurposed and intensified after it.
+
+> **Wave 13 update (2026-11-02).** (1) The drain contracts on Ethereum are **pinned by verified names**: `MetaAggregationRouterV2` (swap-drained the TB7-operator wallet), an `ERC1967Proxy` whose implementation is verified as **`Ethereum_SpokePool`** (the `fillRelay` target), and **`TransitStation`** (`submitOrder` — full address recovered from a live transaction after wave 12 stored it truncated). The operators liquidate through professional, public bridge/aggregation infrastructure. (2) The absorber's lifetime is no longer a floor: a single continuous 61-page descending walk reached the birth window — **8,809 sends = $1,060,756,345.72** (first observed send 08-11 12:21:12), of which **$85.10M after the hack**. (3) The four treasury giants around `TKHuVq1o` are resolved and behaviorally fingerprinted — including a **$147.15B 18-counterparty conduit** (in ≈ out to within $10,703) and an aggregator **born 2026-10-18, 11 days pre-hack** (wave-14 lead). (4) The two "sleeping" ETH wallets are **actively draining** through the pinned infrastructure. Exhibits below remain wave-12 snapshots; the Key findings table supersedes them.
+
+> **Wave 13 update (2026-11-02).** (1) The drain contracts on Ethereum are **pinned by verified names**: `MetaAggregationRouterV2` (swap-drained the TB7-operator wallet), an `ERC1967Proxy` whose implementation is verified as **`Ethereum_SpokePool`** (the `fillRelay` target), and **`TransitStation`** (`submitOrder` — full address recovered from a live transaction after wave 12 stored it truncated). The operators liquidate through professional, public bridge/aggregation infrastructure. (2) The absorber's lifetime is no longer a floor: a single continuous 61-page descending walk reached the birth window — **8,809 sends = $1,060,756,345.72** (first observed send 08-11 12:21:12), of which **$85.10M after the hack**. (3) The four treasury giants around `TKHuVq1o` are resolved and behaviorally fingerprinted — including a **$147.15B 18-counterparty conduit** (in ≈ out to within $10,703) and an aggregator **born 2026-10-18, 11 days pre-hack** (wave-14 lead). (4) The two "sleeping" ETH wallets are **actively draining** through the pinned infrastructure. Exhibits below remain wave-12 snapshots; the numbers in this table supersede them.
 
 ---
 
@@ -58,7 +62,7 @@ All exhibits are regenerated each wave from live probes (HTML/CSS sources includ
 
 ---
 
-## The twelve waves
+## The waves
 
 | Wave | Date (UTC) | Headline |
 |------|-----------|----------|
@@ -71,6 +75,8 @@ All exhibits are regenerated each wave from live probes (HTML/CSS sources includ
 | 10 | 11-01 | Bytecode named it: **UsdtOFT**, 22,646 B, **no Transfer/Approval topics anywhere**; pay1 = $2.34B pre-hack hub; freeze 84/84 |
 | 11 | 11-01 | **1,100 send() calls ABI-decoded = $132.94M** across 4 chains (eids pinned from LayerZero metadata); seller dies dry at 131.004037 TRX; sibling UsdtOFT moved $100.84M **in August**; freeze 90/90 |
 | 12 | 11-01 | **Lifetime $836.08M / 6,564 sends** (floor; born 08-12); **post-hack $83.46M final**; fates of 7 EVM destinations; **live capture at 14:35:39 during probe**; freeze 112/112 |
+| 13 | 11-02 | **Full lifetime $1,060,756,345.72 / 8,809 sends** (floor replaced — walk reached birth window 08-11); drain contracts pinned (MetaAggregationRouterV2 / Ethereum_SpokePool proxy / TransitStation); treasury giants resolved + fingerprinted ($147.15B conduit; aggregator born 10-18); sleepers draining −$65,817.52/28h; freeze 82/82; BTC/XRP/SOL dormancy recheck honestly closed (rosters lost with W1–W3 folder) |
+| 13 | 11-02 | **Full lifetime $1,060,756,345.72 / 8,809 sends** (floor replaced — walk reached birth window 08-11); drain contracts pinned (MetaAggregationRouterV2 / Ethereum_SpokePool proxy / TransitStation); treasury giants resolved + fingerprinted ($147.15B conduit; aggregator born 10-18); sleepers draining −$65,817.52/28h; freeze 82/82; BTC/XRP/SOL dormancy recheck honestly closed (rosters lost with W1–W3 folder) |
 
 ---
 
@@ -86,15 +92,15 @@ binance-heist-2026/
 │   ├── 04-cross-chain-exit.md       ← LayerZero OFT decode + destination fates
 │   ├── 05-freeze-response.md        ← the issuer wall vs. the moving half
 │   ├── 06-methodology.md            ← probes, walks, verification, honesty ledger
-│   └── 07-wave-log.md               ← full W1–W12 ledger
+│   └── 07-wave-log.md               ← full W1–W13 ledger
 ├── data/
 │   ├── addresses.csv                ← curated address catalog (role + status)
 │   ├── events.csv                   ← timeline events
 │   ├── absorber_sends_summary.csv   ← per-chain OFT aggregates
-│   ├── ioc_wave11.csv / ioc_wave12.csv  ← machine-readable IOC rows
-├── exhibits/                        ← visual dossier (PNG, regenerated per wave)
+│   ├── ioc_wave11.csv / ioc_wave12.csv / ioc_wave13.csv  ← machine-readable IOC rows
+├── exhibits/                        ← visual dossier (PNG; wave-12 snapshot — wave-13 numbers in Key findings)
 │   └── src/                         ← HTML/CSS sources + render script
-└── social/                          ← ready-to-post Twitter thread + LinkedIn post
+└── social/                          ← ready-to-post Twitter thread + LinkedIn post + platform-sized cards
 ```
 
 ---
@@ -115,10 +121,12 @@ Machine-readable artifacts live in [`data/`](data/). Larger raw probe JSONs (one
 
 | File | Contents |
 |---|---|
-| `addresses.csv` | 25 curated addresses: chain, role, live status as of 2026-11-01 14:40 UTC |
+| `addresses.csv` | 25 curated addresses: chain, role, live status as of 2026-11-01 18:56 UTC |
 | `events.csv` | Minute-level incident timeline |
 | `absorber_sends_summary.csv` | Per-chain OFT lifetime / post-hack aggregates |
-| `ioc_wave11.csv`, `ioc_wave12.csv` | 79 rows of indicators (addresses, contracts, roles, freeze status) |
+| `ioc_wave11.csv`, `ioc_wave12.csv`, `ioc_wave13.csv` | 93 rows of indicators (addresses, contracts, roles, freeze status) |
+| `wave13_lifetime_full.json` | The authoritative 8,809-send continuous walk (per-send: timestamp, caller, destination eid, amount, txid) |
+| `wave13_giants.json`, `wave13_evm_contracts.json`, `wave13_sleeping.json`, `wave13_microops.json`, `wave13_freeze.json` | Wave-13 probe outputs (treasury fingerprints, pinned contracts, sleeper balances, freeze sweep) |
 
 ---
 
@@ -140,11 +148,11 @@ This project is **independent security research** built solely from public on-ch
 
 ```bibtex
 @misc{binance_heist_2026_forensics,
-  title  = {Binance Heist 2026 — Open-Source On-Chain Forensics (12-Wave Reconstruction)},
+  title  = {Binance Heist 2026 — Open-Source On-Chain Forensics (13-Wave Reconstruction)},
   author = {DefiAudit0x},
   year   = {2026},
   url    = {https://github.com/DefiAudit0x/binance-heist-2026},
-  note   = {Public-blockchain-only investigation; data through 2026-11-01 14:40 UTC}
+  note   = {Public-blockchain-only investigation; data through 2026-11-01 18:56 UTC}
 }
 ```
 

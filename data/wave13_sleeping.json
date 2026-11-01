@@ -1,0 +1,74 @@
+[
+ {
+  "addr": "0xf78b2eda7c1e20ff9906b31fe3612195bce9d6ce",
+  "chain": "eth",
+  "tag": "pay2-op holds",
+  "usdt_now": 305401.065398,
+  "eth_now": 104.19566846977271,
+  "last_tx_ts": "2026-11-01T18:58:35.000000Z",
+  "txs_since_w12_close": 50,
+  "latest_methods": [
+   [
+    "2026-11-01T18:58:35.000000Z",
+    "transfer"
+   ],
+   [
+    "2026-11-01T18:47:11.000000Z",
+    "0x00000000"
+   ],
+   [
+    "2026-11-01T18:43:11.000000Z",
+    null
+   ],
+   [
+    "2026-11-01T18:41:23.000000Z",
+    "transfer"
+   ],
+   [
+    "2026-11-01T18:37:23.000000Z",
+    "transfer"
+   ]
+  ]
+ },
+ {
+  "addr": "0x07ae8551be970cb1cca11dd7a11f47ae82e70e67",
+  "chain": "eth",
+  "tag": "TAF-op holds",
+  "usdt_now": 838624.306792,
+  "eth_now": 13.785496248311446,
+  "last_tx_ts": null,
+  "txs_since_w12_close": 49,
+  "latest_methods": [
+   [
+    null,
+    "submitOrder"
+   ],
+   [
+    "2026-11-01T18:53:35.000000Z",
+    "execute"
+   ],
+   [
+    "2026-11-01T18:52:47.000000Z",
+    "fillRelay"
+   ],
+   [
+    "2026-11-01T18:52:47.000000Z",
+    "fillRelay"
+   ],
+   [
+    "2026-11-01T18:52:23.000000Z",
+    "fillRelay"
+   ]
+  ]
+ },
+ {
+  "addr": "0x759ba420bf1ded1765f18c2dc3fc57a1964a2ad1",
+  "chain": "arb",
+  "tag": "ARB fresh-funded",
+  "usdt_now_err": "eth_call failed: {'code': -32602, 'message': 'invalid argument 0: json: cannot unmarshal hex string without 0x prefix into Go struct field TransactionArgs.data of type hexutil.Bytes'}",
+  "act_err": "HTTP Error 404: Not Found",
+  "usdt_now": 1182.406074,
+  "eth_now_arb": 0.023486057714007535,
+  "note": "balance via public RPC eth_call (arb blockscout 404, documented W12)"
+ }
+]

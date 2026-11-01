@@ -1,0 +1,15 @@
+address,role,evidence,frozen_isBlackListed,public_tag,contract_name,first_logged
+0x6131B5fae19EA4f9D964eAc0408E4408b66337b5,EVM drain router: used to swap-drain TB7-operator wallet ($18.10M) on 10-31 22:00-22:06; verified name via Blockscout metadata, Ethplorer,w13_probe2,False,,MetaAggregationRouterV2,2026-11-02 UTC
+0x5c7BCd6E7De5423a257D81B442095A1a6ced35C5,EVM relay proxy: ERC1967Proxy -> impl 0x456ac26e5ec083ee9889eba0d1a0a582502b8e84 (Ethereum_SpokePool); TAF-op fillRelay x3 at 11-01 18:52,w13_probe2,False,,ERC1967Proxy,2026-11-02 UTC
+0x456ac26e5ec083ee9889eba0d1a0a582502b8e84,Implementation of the relay proxy above; verified name Ethereum_SpokePool,w13_probe2,False,,Ethereum_SpokePool,2026-11-02 UTC
+0x49AAA987b1a7e9E4AE091dcD8332c39F322D7d28,submitOrder target (full addr recovered from live tx 0xd034c1ff...); used by TAF-op 11-01 18:53,w13_probe2,False,,TransitStation,2026-11-02 UTC
+TETzqWSBDY12HrK4MsPq8A3AvZzhjoHgbx,Treasury giant #1: closed 2-counterparty loop with TKHuVq1o, in $13.30B = out $13.30B in sampled window; born 2025-11-27; silent since 10-30 02:17,w13_giants,False,,,2026-11-02 UTC
+TQFRLF5YdXA1L8TVvz2xeaDyEqguRtg8fX,Treasury giant #2: 7-counterparty $3.94B conduit TKHu/TXFB; born 2024-10-04; silent since 10-29 16:24 (pre-attack),w13_giants,False,,,2026-11-02 UTC
+TBPxhVAsuzoFnKyXtc1o2UySEydPHgATto,Treasury giant #3: $147.15B 18-counterparty conduit (in $147,150,010,704 ~ out $147,150,000,001); TKHu overlap $144.15B; silent since 10-30 22:12,w13_giants,False,,,2026-11-02 UTC
+TDqSquXBgUCLYvYC4XZgrprLK589dkhSCf,Treasury giant #4 (W14 lead): deposit aggregator born 2026-10-18 (11d pre-hack); 399-unique fan-in $1.28M vs out $81.5M/2; active 11-01 11:28,w13_giants,False,,,2026-11-02 UTC
+TYmHwFmjngMBiKrMK1VHwQw2KPra3e1WCb,Micro-operator: 61 absorber send() calls in last page; USDT 0; freeze-clean,w13_microops,False,,,2026-11-02 UTC
+TFNPHPpHQXKuvSLfNwcvkcwGvgMJG8JSVc,Micro-operator: 8 absorber calls; last 11-01 15:24:24; freeze-clean,w13_microops,False,,,2026-11-02 UTC
+TXAQd3BhC3RVVEyiNCd1nmf9dGDvL3M3Kq,Micro-operator: 14 absorber calls; last 11-01 17:03:30; freeze-clean,w13_microops,False,,,2026-11-02 UTC
+TSMtAweHkMMLHCdEytqDhApRsmTbp6bK6R,Micro-operator: 34 absorber calls; funded ARB dest 0x759ba420 with 2,000 USDT at 14:02:51; freeze-clean,w13_microops,False,,,2026-11-02 UTC
+THLTgNbHXxGnBT3b65WNoBbZbq5mpzxaAb,Micro-operator: 8 absorber calls; last 11-01 13:36:36; freeze-clean,w13_microops,False,,,2026-11-02 UTC
+TFG4wBaDQ8sHWWP1ACeSGnoNR6RRzevLPt,absorber UsdtOFT FULL LIFETIME (W13): continuous desc walk 61pp to birth window = 8,809 sends $1,060,756,345.72 (first observed send 08-11 12:21:12 -> 11-01 18:56:33; ETH $921.78M/6595 + ARB $87.81M/1245 + TON $30.42M/529 + SOL $20.74M/440); post-hack $85,096,119.95/821 (+$1,638,868.83/18 beyond W12 cutoff); monotonic, zero future rows,w13_deepdesc,False,,UsdtOFT,2026-11-02 UTC
